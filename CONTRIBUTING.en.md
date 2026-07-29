@@ -14,6 +14,8 @@ Before changing the product promise, skill roles, activation model, or compositi
 - Minor: skill additions or removals, material trigger changes, composition role changes, or starter prompt changes.
 - Major candidate: a source/package contract break, canonical plugin path change, or public contract break that installers or marketplace consumers rely on.
 
+A repository-root operations-doc change does not require an immediate plugin release. Apply the classification above when selecting the version for the next release.
+
 ## Validation
 
 ```bash
@@ -26,11 +28,13 @@ git diff --check
 
 1. Run validation.
 2. Update the version in `plugins/judgment-craft/.codex-plugin/plugin.json` and both changelogs.
-3. Open a PR and pass CI.
-4. Create an immutable `v<version>` tag on the same merged commit.
+3. Apply the verified change to `main` and confirm that main CI passes.
+4. Create an immutable `v<version>` tag on that exact commit.
 5. Confirm the release workflow checks `--release-tag v<version>` and completes GitHub release creation.
 6. Update the `perhapsspy/codex-plugins` marketplace pin to the release commit full SHA.
 7. Run remote marketplace validation and an install round trip.
+
+A PR is not a required release step. Use one only when separate review or collaboration is useful.
 
 ## Rollback
 

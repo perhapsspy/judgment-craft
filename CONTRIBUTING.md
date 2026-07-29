@@ -14,6 +14,8 @@
 - Minor: 스킬 추가·삭제, 중요한 trigger 변경, composition 역할 변경, starter prompt 변경.
 - Major 후보: 패키지 계약, 설치 경로, marketplace가 의존하는 공개 계약을 깨는 변경.
 
+저장소 루트의 운영 문서만 바뀐 경우 즉시 plugin release는 필요하지 않습니다. 위 분류는 다음 release의 version을 선택할 때 적용합니다.
+
 ## 검증
 
 ```bash
@@ -26,11 +28,13 @@ git diff --check
 
 1. 검증 명령을 실행합니다.
 2. manifest 버전과 두 changelog를 갱신합니다.
-3. PR을 열고 CI를 통과시킵니다.
-4. 같은 merge 커밋에 변경 불가능한 `v<version>` 태그를 만듭니다.
+3. 검증된 변경을 `main`에 반영하고 main CI 통과를 확인합니다.
+4. 같은 commit에 변경 불가능한 `v<version>` 태그를 만듭니다.
 5. release workflow가 `--release-tag v<version>`을 확인하고 GitHub Release를 생성하는지 확인합니다.
 6. `perhapsspy/codex-plugins` marketplace를 릴리스 커밋의 전체 SHA로 갱신합니다.
 7. 원격 marketplace 검증과 설치 round trip을 수행합니다.
+
+PR은 필수 릴리스 단계가 아닙니다. 별도 검토나 협업이 필요할 때만 선택적으로 사용합니다.
 
 ## 롤백
 
