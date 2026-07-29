@@ -1,0 +1,4 @@
+interface:
+  display_name: "Friction Distillation"
+  short_description: "Choose the smallest response to recurring friction"
+  default_prompt: "Use $friction-distillation to decide whether recurring friction warrants any reusable intervention."

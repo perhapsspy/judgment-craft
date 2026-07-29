@@ -1,0 +1,4 @@
+interface:
+  display_name: "Practical Judgment"
+  short_description: "Give a bounded recommendation for a current choice"
+  default_prompt: "Use $practical-judgment for a direct recommendation on this current choice."

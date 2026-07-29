@@ -1,0 +1,19 @@
+{
+  "name": "judgment-craft",
+  "version": "0.1.0",
+  "description": "Bounded judgment for current choices, corrections, and recurring friction.",
+  "keywords": ["judgment", "decision-making", "calibration", "friction"],
+  "author": {"name": "perhapsspy", "url": "https://github.com/perhapsspy"},
+  "homepage": "https://github.com/perhapsspy/judgment-craft#readme",
+  "repository": "https://github.com/perhapsspy/judgment-craft",
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Judgment Craft",
+    "shortDescription": "Bounded judgment for choices and recurring friction.",
+    "longDescription": "Choose a direct current recommendation, recalibrate after correction, or select the smallest response to recurring friction.",
+    "developerName": "perhapsspy",
+    "category": "Productivity",
+    "defaultPrompt": ["Use $practical-judgment for a bounded recommendation.", "Use $calibrate-judgment after an explicit correction.", "Use $friction-distillation to choose a recurrence-prevention response."]
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calibrate Judgment"
+  short_description: "Recompute a judgment after explicit user correction"
+  default_prompt: "Use $calibrate-judgment to recompute this judgment after my correction."
