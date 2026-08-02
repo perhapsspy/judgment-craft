@@ -1,0 +1,4 @@
+interface:
+  display_name: "Judgment Craft"
+  short_description: "Ground consequential choices in real outcomes"
+  default_prompt: "Use $judgment-craft to choose or revalidate this consequential direction before commitment."

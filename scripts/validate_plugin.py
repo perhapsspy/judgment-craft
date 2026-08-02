@@ -13,9 +13,8 @@ from pathlib import Path
 
 
 EXPECTED_SKILLS = {
-    "practical-judgment",
-    "calibrate-judgment",
-    "friction-distillation",
+    "judgment-craft",
+    "judgment-repair",
 }
 REQUIRED_AGENT_FIELDS = ("display_name", "short_description", "default_prompt")
 SEMVER_RE = re.compile(r"^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?$")

@@ -1,6 +1,6 @@
 # Judgment Craft
 
-Judgment Craft is a Codex plugin for bounded judgment: direct current recommendations, explicit recalibration after correction, and the smallest sufficient response to recurring friction.
+Judgment Craft is a Codex plugin that grounds consequential choices in real outcomes and repairs current action after correction or contrary evidence.
 
 Korean: [README.md](README.md)
 
@@ -28,24 +28,23 @@ codex plugin remove judgment-craft@perhapsspy
 
 | Skill | Use when |
 | --- | --- |
-| `$practical-judgment` | You need a direct recommendation for a current choice or judgment. |
-| `$calibrate-judgment` | You explicitly corrected the criteria, scope, or meaning of a prior judgment. |
-| `$friction-distillation` | You need to choose the response level for recurring friction. |
+| `$judgment-craft` | Choose or revalidate a materially costly or hard-to-reverse direction before commitment. |
+| `$judgment-repair` | A user correction, observed contradiction, or repeated same-mechanism failure invalidates the current judgment. |
 
-When a corrected current judgment may also require recurrence prevention, use `$calibrate-judgment` first and then `$friction-distillation`.
-
-Package path: `plugins/judgment-craft/`
-
-The product promise and role boundaries are owned by [docs/PRODUCT.md](docs/PRODUCT.md). Follow [CONTRIBUTING.en.md](CONTRIBUTING.en.md) for changes. Keep [CONTRIBUTING.md](CONTRIBUTING.md) and [CHANGELOG.md](CHANGELOG.md) aligned.
+For example, use `$judgment-craft` before promoting a technical demo to a product milestone. If observed use later contradicts its premise, `$judgment-repair` replaces the recommendation and next action.
 
 After installation or update, start a new Codex task so the refreshed skills are loaded.
+
+[docs/PRODUCT.md](docs/PRODUCT.md) owns the product promise and activation boundaries. Follow [CONTRIBUTING.en.md](CONTRIBUTING.en.md) for contribution, validation, and release procedures.
 
 ## Development
 
 ```bash
 python -m unittest discover -s tests -p "test_*.py" -v
 python scripts/validate_plugin.py
+git diff --check
+```
 
 ## License
+
 [MIT](LICENSE)
-```

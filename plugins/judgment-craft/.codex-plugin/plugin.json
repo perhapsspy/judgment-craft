@@ -1,8 +1,8 @@
 {
   "name": "judgment-craft",
-  "version": "0.1.0",
-  "description": "Bounded judgment for current choices, corrections, and recurring friction.",
-  "keywords": ["judgment", "decision-making", "calibration", "friction"],
+  "version": "0.2.0",
+  "description": "Consequential judgment before commitment and evidence-backed repair afterward.",
+  "keywords": ["judgment", "decision-making", "product", "calibration"],
   "author": {"name": "perhapsspy", "url": "https://github.com/perhapsspy"},
   "homepage": "https://github.com/perhapsspy/judgment-craft#readme",
   "repository": "https://github.com/perhapsspy/judgment-craft",
@@ -10,10 +10,10 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Judgment Craft",
-    "shortDescription": "Bounded judgment for choices and recurring friction.",
-    "longDescription": "Choose a direct current recommendation, recalibrate after correction, or select the smallest response to recurring friction.",
+    "shortDescription": "Ground consequential choices in real outcomes.",
+    "longDescription": "Select or revalidate consequential directions before commitment, then repair affected judgment after correction or contrary evidence.",
     "developerName": "perhapsspy",
     "category": "Productivity",
-    "defaultPrompt": ["Use $practical-judgment for a bounded recommendation.", "Use $calibrate-judgment after an explicit correction.", "Use $friction-distillation to choose a recurrence-prevention response."]
+    "defaultPrompt": ["Use $judgment-craft to choose or revalidate this consequential direction before commitment.", "Use $judgment-repair to replace this judgment after correction or contrary evidence."]
   }
 }

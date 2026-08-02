@@ -1,0 +1,4 @@
+interface:
+  display_name: "Judgment Repair"
+  short_description: "Repair a judgment after correction or contrary evidence"
+  default_prompt: "Use $judgment-repair to replace this judgment after correction or contrary evidence."

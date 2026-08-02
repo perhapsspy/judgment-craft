@@ -6,13 +6,13 @@
 
 Content owner first. Edit the canonical plugin copy directly under `plugins/judgment-craft`. Do not add `sources.lock`, `sync_skills`, generated snapshots, or mirror flows.
 
-Before changing the product promise, skill roles, activation model, or composition meaning, update [docs/PRODUCT.md](docs/PRODUCT.md).
+Before changing the product promise, skill roles, or activation boundaries, update [docs/PRODUCT.md](docs/PRODUCT.md).
 
 ## Version Rules
 
-- Patch: compatible wording, explanation, typo, validation, or documentation fixes that preserve the existing activation and composition contract.
-- Minor: skill additions or removals, material trigger changes, composition role changes, or starter prompt changes.
-- Major candidate: a source/package contract break, canonical plugin path change, or public contract break that installers or marketplace consumers rely on.
+- Patch: compatible wording, explanation, validation, or documentation fixes that preserve the existing activation and behavior contract.
+- Pre-1.0 Minor: experimental changes that may be incompatible, including skill additions or removals, material trigger changes, role redesigns, or starter prompt changes. Record the migration path in the changelog.
+- Post-1.0 Major: a source or package contract break, canonical plugin path change, or public contract break relied on by callers or marketplace consumers.
 
 A repository-root operations-doc change does not require an immediate plugin release. Apply the classification above when selecting the version for the next release.
 
